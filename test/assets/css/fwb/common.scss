@@ -1,0 +1,18 @@
+#category-fwb /deep/ {
+  //通用样式
+  .box-shadow1 {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+  }
+
+  p {
+    line-height: 1.4em;
+    @include px2rem(margin-bottom, 20px);
+    @media screen and (min-width: $breakpoint-xl-min) {
+      margin-bottom: 10px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+}

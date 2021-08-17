@@ -1,0 +1,977 @@
+#category-fwb /deep/ {
+  .arror-right {
+    @include px2rem(width, 36px);
+    @include px2rem(height, 26px);
+    @media screen and (min-width: $breakpoint-xl-min) {
+      width: 11px;
+      height: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .aStyle1 {
+    text-align: left;
+    width: 100%;
+
+    a {
+      display: inline-block;
+      text-decoration: underline;
+      text-align: center;
+      color: rgba(18, 150, 219, 1);
+    }
+
+    @media screen and (max-width: $breakpoint-sm-max) {
+      text-align: center;
+    }
+  }
+
+  .fit-height {
+    height: fit-content;
+  }
+
+  .my-shadow {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+  }
+
+  //效果参考Bumper-stickers>Other Awesome Stickers Type
+  .public-editor1 {
+    .tools {
+      .tool:nth-child(1) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Kraft-Paper-Stickers.png");
+        }
+      }
+
+      .tool:nth-child(2) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Holographic-Stickers.png");
+        }
+      }
+
+      .tool:nth-child(3) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Fluorescent-Stickers.png");
+        }
+      }
+
+      .tool:nth-child(4) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Foil-Stickers.png");
+        }
+      }
+
+      .tool:nth-child(5) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Pearlescent-stickers.png");
+        }
+      }
+
+      .tool:nth-child(6) {
+        .doubleImg {
+          background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/Metallic-Stickers-.png");
+        }
+      }
+    }
+
+    .armor {
+      .doubleImg {
+        height: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        border: 1px solid #e8e8e8;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+        border-radius: 75px 0 75px 0;
+        @include px2rem(width, 341px);
+        @include px2rem(height, 309px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 100%;
+          height: 309px;
+        }
+        background-size: 140%;
+        @include px2rem(background-position-x, 40px);
+        @include px2rem(background-position-y, -205px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          background-position-x: 20px;
+          background-position-y: -218px;
+        }
+
+        .box {
+          position: absolute;
+          @include px2rem(width, 181px);
+          @include px2rem(height, 150px);
+          left: 0;
+          bottom: 0;
+          @media screen and (min-width: $breakpoint-xl-min) {
+            width: 179px;
+            height: 147px;
+          }
+        }
+      }
+    }
+  }
+
+  .public-editor1 {
+    a:not(.mark1) {
+      color: black;
+    }
+
+    .img {
+      @include px2rem(width, 290px);
+      @include px2rem(height, 290px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 255px;
+        height: 255px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .hoverStyle {
+      cursor: pointer;
+
+      .img {
+        position: relative;
+      }
+
+      .img::after {
+        position: absolute;
+        content: "";
+        @include px2rem(width, 290px);
+        @include px2rem(height, 290px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 255px;
+          height: 255px;
+        }
+        left: 0;
+        top: 0;
+        background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210518/圆角矩形28拷贝4.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+      }
+
+      .arror-right {
+        @include px2rem(width, 36px);
+        @include px2rem(height, 26px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 11px;
+          height: 8px;
+        }
+        display: none;
+        @media screen and (min-width: $breakpoint-xl-min) {
+          display: inline-block;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: none;
+          @media screen and (min-width: $breakpoint-xl-min) {
+            display: inline;
+          }
+        }
+      }
+
+      &:hover {
+        .img::after {
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 1;
+        }
+
+        a {
+          color: #1296db;
+          text-decoration: underline;
+
+          .arror-right {
+            img {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //参考 Die-cut-stickers> vs
+  .public-editor2.mb {
+    h3 {
+      color: #6ea7de;
+    }
+
+    .img {
+      @include px2rem(width, 243px);
+      @include px2rem(height, 178px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .img2 {
+      @include px2rem(width, 207px);
+      @include px2rem(height, 207px);
+      box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .border1 {
+      border: 4px solid #6ea7de;
+    }
+
+    .bg {
+      background-color: rgba(110, 167, 222, 1);
+
+      p {
+        color: white;
+      }
+
+      h3 {
+        color: white;
+      }
+    }
+  }
+
+  .public-editor2.pc {
+    .box {
+      .left {
+        h3 {
+          color: #6ea7de;
+        }
+
+        .img {
+          width: 243px;
+          height: 178px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .right {
+        * {
+          color: white;
+        }
+
+        .img {
+          width: 207px;
+          height: 207px;
+          box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.3);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      border: 4px solid #6ea7de;
+      width: 100%;
+      height: 480px;
+      background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210518/组39.png");
+      background-repeat: no-repeat;
+      background-position: 103% 0;
+    }
+  }
+
+  //参考 bumper stickers >why
+  .public-editor3 {
+    .bs {
+      height: auto;
+
+      > div {
+        height: 100%;
+        box-shadow: none;
+        @media screen and (min-width: $breakpoint-xl-min) {
+          box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+        }
+      }
+
+      .img {
+        @include px2rem(width, 195px);
+        @include px2rem(height, 181px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 150px;
+          height: 130px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          box-shadow: none;
+        }
+      }
+
+      .height58 {
+        @media screen and (min-width: $breakpoint-xl-min) {
+          h3 {
+            height: 58px;
+          }
+        }
+      }
+    }
+  }
+
+  .public-editor4 {
+    .img {
+      display: inline-block;
+      @include px2rem(width, 329px);
+      @include px2rem(height, 270px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 329px;
+        height: 270px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .public-editor5 {
+    .img {
+      display: inline-block;
+      @include px2rem(width, 268px);
+      @include px2rem(height, 181px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 268px;
+        height: 181px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  //Custom-stickers
+  .Custom-stickers.f1 {
+    .underline {
+      position: relative;
+    }
+
+    .underline::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      @include px2rem(bottom, -20px);
+      @include px2rem(width, 50px);
+      @include px2rem(height, 5px);
+      background-color: rgba(51, 51, 51, 1);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 44px;
+        height: 4px;
+        bottom: -25px;
+      }
+    }
+
+    .box {
+      @include px2rem(height, 311px);
+      @include px2rem(width, 311px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 100%;
+        height: 100%;
+      }
+
+      .bg {
+        background-color: #66aef2;
+      }
+    }
+  }
+
+  .Custom-stickers.f2 {
+  }
+
+  .Custom-stickers.f3 {
+    .box {
+      .img {
+        display: flex;
+        justify-content: center;
+
+        > div {
+          @include px2rem(width, 460px);
+          @media screen and (min-width: $breakpoint-xl-min) {
+            width: 326px;
+          }
+        }
+      }
+
+      h3 {
+        @include px2rem(margin-left, 20px);
+        @include px2rem(margin-right, 20px);
+        position: relative;
+      }
+
+      h3::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        @include px2rem(bottom, -20px);
+        @include px2rem(width, 50px);
+        @include px2rem(height, 5px);
+        background-color: rgba(18, 150, 219, 1);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 44px;
+          height: 5px;
+          left: 50%;
+          top: 45px;
+          transform: translateX(-50%);
+        }
+      }
+
+      p {
+        @include px2rem(margin-left, 20px);
+        @include px2rem(margin-right, 20px);
+      }
+    }
+  }
+
+  .Custom-stickers.f5.bg {
+    width: 100%;
+    @include px2rem(height, 1185px);
+    background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210514/background.jpg");
+    @media screen and (min-width: $breakpoint-xl-min) {
+      height: 571px;
+      background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210516/background.jpg");
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Custom-stickers.f5 {
+    .box {
+      @include px2rem(width, 300px);
+      @include px2rem(height, 424px);
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+      }
+
+      .img {
+        @include px2rem(width, 288px);
+        @include px2rem(height, 356px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media screen and (min-width: $breakpoint-xl-min) {
+        .font {
+          height: 50px;
+
+          h3 {
+            height: 100%;
+            line-height: 50px !important;
+          }
+        }
+      }
+    }
+  }
+
+  //Die-Cut-Stickers
+  .Die-Cut-Stickers.f1 {
+    .img {
+      @include px2rem(width, 554px);
+      @include px2rem(height, 494px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 554px;
+        height: 494px;
+      }
+    }
+  }
+
+  .Die-Cut-Stickers.f2 {
+    .img {
+      @include px2rem(width, 615px);
+      @include px2rem(height, 537px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Die-Cut-Stickers.f2.pc {
+    .img {
+      width: 615px;
+      height: 537px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Die-Cut-Stickers.f4 {
+  }
+
+  .Bumper-Stickers.f1 {
+    .img {
+      @include px2rem(width, 574px);
+      @include px2rem(height, 356px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 574px;
+        height: 356px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Bumper-Stickers.f2 {
+    .img {
+      @include px2rem(width, 675px);
+      @include px2rem(height, 225px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .img2 {
+      @include px2rem(width, 162px);
+      @include px2rem(height, 162px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Bumper-Stickers.f2.pc {
+    .img {
+      width: 540px;
+      height: 180px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .img2 {
+      width: 82px;
+      height: 82px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Kiss-Cut-Stickers.f1 {
+    .img {
+      @include px2rem(width, 539px);
+      @include px2rem(height, 405px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 539px;
+        height: 405px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Kiss-Cut-Stickers.f2 {
+    .bd-blue {
+      border: 8px solid #1296db;
+
+      .title {
+        background-color: #1296db;
+      }
+    }
+
+    .bd-yellow {
+      border: 8px solid #f4c043;
+
+      .title {
+        background-color: #f4c043;
+      }
+    }
+
+    .bd-blue,
+    .bd-yellow {
+      position: relative;
+      border-radius: 20px;
+
+      .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -12%;
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+
+        h3 {
+          margin: 0;
+        }
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+
+        .img {
+          @include px2rem(width, 219px);
+          @include px2rem(height, 217px);
+          @media screen and (min-width: $breakpoint-xl-min) {
+            width: 219px;
+            height: 217px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .bd2-blue {
+      background-color: #1296db;
+      color: white;
+    }
+
+    .bd2-yellow {
+      background-color: #f4c043;
+    }
+
+    .bd2-blue,
+    .bd2-yellow {
+      border-radius: 10px;
+      @include px2rem(height, 81px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        height: 81px;
+      }
+
+      .img {
+        width: 30px;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .img2 {
+      width: 22px;
+      height: 22px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .vs {
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      transform: translateX(-50%);
+      width: 157px;
+      height: 96px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Clear-Stickers.f1 {
+    .img {
+      @include px2rem(width, 554px);
+      @include px2rem(height, 392px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 554px;
+        height: 392px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Clear-Stickers.f2 {
+    .img-title1 {
+      background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210526/圆角矩形588.png");
+    }
+
+    .img-title2 {
+      background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210526/圆角矩形588拷贝2.png");
+    }
+
+    .img-title1,
+    .img-title2 {
+      @include px2rem(width, 506px);
+      @include px2rem(height, 138px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 438px;
+        height: 119px;
+      }
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .img {
+      @include px2rem(width, 642px);
+      @include px2rem(height, 642px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 432px;
+        height: 432px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .vs-img {
+      @include px2rem(width, 98px);
+      @include px2rem(height, 80px);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    ul {
+      li {
+        list-style-type: disc;
+      }
+    }
+
+    .vs {
+      @include px2rem(width, 98px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 98px;
+      }
+      height: 100%;
+      background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210526/vs.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 3%;
+    }
+  }
+
+  .Clear-Stickers.f3 {
+    .img {
+      @include px2rem(width, 540px);
+      @include px2rem(height, 342px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 540px;
+        height: 342px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Square-Labels.f1 {
+    .img {
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 300px;
+        height: 300px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .bottom {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+
+      h3 {
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 0;
+        text-align: center;
+        @include px2rem(font-size, 24px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .Square-labels.f3 {
+    background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210615/Why-Choose-Circle-Labels-from-CustomSticker.png?x-oss-process=image/format,jpg/quality,q_80");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .img2 {
+      @include px2rem(width, 121px);
+      @include px2rem(height, 121px);
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 115px;
+        height: 115px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Square-labels.f3.phone {
+    background-image: url("https://sticker-static.oss-accelerate.aliyuncs.com/image/uploads/20210712/Oval-Buttons_Features-of-Custom-Oval-Buttons--MB.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .img2 {
+      @media screen and (min-width: $breakpoint-xl-min) {
+        width: 115px;
+        height: 115px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .Die-Cut-Labels.f1 {
+    .box {
+      height: 204px;
+
+      .imgA {
+        left: 2.5rem;
+        top: 3.5rem;
+        transform: translateY(-38%);
+        z-index: 1;
+        @include px2rem(width, 60px);
+        @include px2rem(height, 60px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 60px;
+          height: 60px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .imgB {
+        @include px2rem(width, 233px);
+        @include px2rem(height, 204px);
+        @media screen and (min-width: $breakpoint-xl-min) {
+          width: 233px;
+          height: 204px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .right {
+        @media screen and (min-width: $breakpoint-xl-min) {
+          margin-left: 150px;
+        }
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  .Die-Cut-Labels.f1.phone {
+    .box2 {
+      @include px2rem(width, 148px);
+      @include px2rem(height, 148px);
+
+      .imgA {
+        z-index: 1;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        @include px2rem(width, 75px);
+        @include px2rem(height, 75px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .imgB {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

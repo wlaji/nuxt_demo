@@ -1,0 +1,546 @@
+#category-fwb /deep/ {
+  .text-left{
+    text-align: left;
+  }
+  .round-part2{
+    .round-part2-div1 {
+      display: block;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+      .round-text{
+        width: 1046px;
+        height: 125px;
+        top: 12%;
+        margin-left: 140px;
+      }
+      .img{
+        margin: 0 auto;
+      }
+    }
+    .round-part2-div2 {
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+      }
+      .img{
+        margin: 0 auto;
+      }
+      .round-text{
+        left: 18%;
+        top: 8%;
+      }
+    }
+  }
+  .round-stickers {
+    text-align: center;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      background: #ECECEC !important;
+      text-align: left !important;
+      .list-item{
+        background: #ECECEC !important;
+      }
+      .imgWrap{
+        background: #FFFFFF !important;
+      }
+      h3{
+        text-align: left !important;
+      }
+    }
+  }
+  .round-linear{
+    background: linear-gradient(0deg, #FFDFB0 0%, #FDF8EA 100%);
+    margin-left: -3%;
+    padding-right: 2%;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      margin-left: -5%;
+      padding-right: 4%;
+    }
+  }
+  .vinyl-lettering{
+    .img-box1,.img-box2,img{
+      height: 433px;
+      object-fit: cover;
+    }
+    @media screen and (max-width: $breakpoint-sm-max) {
+      .img-box1,.img-box1 img{
+        @include px2rem(width, 484px);
+        @include px2rem(height, 264px);
+      }
+      .img-box2,.img-box2 img{
+        @include px2rem(width, 231px);
+        @include px2rem(height, 264px);
+      }
+      .col-flex{
+        display: flex;
+      }
+    }
+  }
+  .Vinyl-Lettering{
+    .order_pic{
+      width: 62px;
+      height: 40px;
+    }
+    .order{
+      margin-bottom: 0;
+      margin-right: 35%;
+    }
+    @media screen and (max-width: $breakpoint-sm-max) {
+      .order_pic{
+        @include px2rem(width, 93.2px);
+        @include px2rem(height, 60px);
+      }
+      .order{
+        margin-right: 70%;
+      }
+    }
+  }
+  .static-part3{
+    background: #F3F3F3;
+  }
+  .view-style{
+    width: 183px;
+    height: 59px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 2px solid #3A74D6;
+    border-radius: 5px;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      border: 4px solid #3A74D6;
+      @include px2rem(width, 285px);
+      @include px2rem(height, 77px);
+    }
+    @media screen and (max-width: 375px) {
+      border: 2px solid #3A74D6;
+    }
+  }
+  .static-part2-pc {
+    display: block;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      display: none;
+    }
+    .col-2{
+      max-width: 11%;
+    }
+
+  }
+  .static-part2-mb {
+    display: none;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      display: block;
+    }
+    .part2-order{
+      width: 46px;
+      height: 46px;
+      margin: 0 auto;
+    }
+    .left-pic img{
+      @include px2rem(width, 251px);
+      @include px2rem(height, 415px);
+    }
+    .part2-order img{
+      object-fit: cover !important;
+      @include px2rem(width, 46px);
+      @include px2rem(height, 46px);
+    }
+  }
+  .static-part3{
+    background: #F3F3F3;
+    .parts-h3{
+      width: -webkit-fill-available;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.5);
+      left: 0;
+      top: 0;
+      text-align: center;
+    }
+    .parts-h3 h3{
+      font-size: 30px;
+    }
+    p{
+      text-align: left;
+    }
+    .hide{
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+        h4{
+          @include px2rem(font-size, 32px, mobile, true);
+        }
+      }
+    }
+    @media screen and (max-width: $breakpoint-sm-max) {
+      .part3-txt{
+        text-align: center;
+      }
+      .parts-h3{
+        position: static !important;
+        background: none;
+        text-align: left;
+      }
+      .parts-h3 h3{
+        font-size: 36px;
+      }
+      .white{
+        top: 85%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: space-around;
+        h4{
+          color: #FFFFFF;
+        }
+      }
+    }
+    @media screen and (min-width: $breakpoint-sm-max) {
+      h3{
+        color: #FFFFFF !important;
+      }
+    }
+  }
+  .static-part5{
+    text-align: center;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      h3,p{text-align: left !important;}
+      .list-item{
+        padding: 0 !important;
+        color: #FFFFFF;
+        background: rgba(0,0,0,0) !important;
+      }
+      .imgWrap {
+        width: 100%;
+        height: 180px;
+        background: #FFFFFF !important;
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.27);
+        border-radius: 3px;
+        img{
+          padding: 15%
+        }
+        @media screen and (max-width: $breakpoint-sm-max) {
+          border: 1px solid #E8E8E8;
+          height: auto;
+        }
+      }
+    }
+    .part5-pc-bg{
+      display: block;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+    }
+    .part5-mb-bg{
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+        @include px2rem(width, 750px);
+        @include px2rem(height, 1770px);
+      }
+    }
+  }
+  .static-part7{
+    .static-part5-star .star-display img{
+      width: 32px;
+      height: 31px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 64px);
+        @include px2rem(height, 62px);
+      }
+    }
+    .review-content .review-star img{
+      width: 20px;
+      height: 19px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 55px);
+        @include px2rem(height, 54px);
+      }
+    }
+    .review-content{
+      span{
+        font-family: Calibri;
+        font-weight: 400;
+        color: #1D2F3A;
+      }
+      p{
+        font-family: Calibri;
+        font-weight: 400;
+        color: #666666;
+      }
+      .p-center{
+        text-align: left;
+      }
+    }
+    .review-content p :first-child{
+      text-align: center;
+    }
+    @media screen and (max-width: $breakpoint-sm-max) {
+      p,h3{
+        text-align: left !important;
+      }
+    }
+  }
+  .customsticker-part3{
+    text-align: center;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      .list-pic .pic-text{
+        text-align: left !important;
+      }
+    }
+    .list-pic img{
+      width: 88px;
+      height: 89px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 104px);
+        @include px2rem(height, 115px);
+      }
+    }
+    P{
+      color: #FFFFFF;
+    }
+    .part3-pc-bg{
+      display: block;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+    }
+    .part3-mb-bg{
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+        @include px2rem(width, 750px);
+        @include px2rem(height, 861px);
+      }
+    }
+    .design-style{
+      width: 224px;
+      height: 50px;
+      color: #F9F9F9 !important;
+      background: #FF7D06;
+      border-radius: 6px;
+      margin: 0 auto;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 620px);
+        @include px2rem(height, 80px);
+      }
+    }
+  }
+  .customsticker-part4{
+    .link-style{
+      background-color: rgba(0,0,0,0.5);
+    }
+    a{
+      color: #FFFFFF;
+    }
+  }
+  .customsticker-part5{
+    .blog-pic img{
+      width: 386px;
+      height: 282px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 670px);
+        @include px2rem(height, 490px);
+      }
+    }
+    a:hover{text-decoration:none;}
+    h3,p{
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  .customsticker-part6{
+    .review-content .list-item{
+      border: 2px solid #F0F0F0;
+    }
+  }
+  .oval-labels-part1{
+    .part1-img{
+      border: 6px solid #FFFFFF;
+    }
+  }
+  .oval-labels-part2{
+    h3{
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+    .part2-pc-bg{
+      width: 384px;
+      height: 122px;
+      display: block;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+    }
+    .part2-mb-bg{
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+        @include px2rem(width, 723px);
+        @include px2rem(height, 188px);
+      }
+    }
+    .part2-text-bg{
+      width: 99%;
+      background: #D9F2FF;
+      border-radius: 0px 4px 20px 4px;
+    }
+    .part2-last-title{
+      width: 174.5px;
+      height: 40px;
+      background: #F79D5B;
+      border-radius: 0px 20px 20px 0px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: flex;
+        @include px2rem(width, 280.5px);
+        @include px2rem(height, 60px);
+      }
+    }
+    .h3-box{
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: flex;
+        @include px2rem(width, 316px);
+        @include px2rem(height, 60px);
+      }
+      @media screen and (max-width: 375px) {
+        margin-top: 0.5%;
+      }
+    }
+  }
+  .oval-labels-part3{
+    .part3-pc-bg{
+      display: block;
+      img{
+        width: 1920px;
+        height: 864px;
+        object-fit: cover;
+      }
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+    }
+    .part3-pc{
+      display: block;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: none;
+      }
+
+    }
+    .part3-mb{
+      display: none;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        display: block;
+      }
+    }
+    .col-2{
+      max-width: 13.666667%;
+      img{
+        width: 54px;
+        height: 60px;
+        @media screen and (max-width: $breakpoint-sm-max) {
+          @include px2rem(width, 60px);
+          @include px2rem(height, 73px);
+        }
+      }
+    }
+    .col-10{
+      padding: 0;
+    }
+  }
+  .bg-F0F0F0{
+    background: #F0F0F0;
+  }
+  .oval-labels-part6{
+    @media screen and (max-width: $breakpoint-sm-max) {
+      .height58 h3,p{
+        text-align: left;
+      }
+      .col-8{
+        padding-right: 10px;
+        padding-left: 6px;
+      }
+      .col-4{
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+    }
+
+  }
+  .oval-lables-part8{
+    img{
+      width: 61px;
+      height: 61px;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 115px);
+        @include px2rem(height, 115px);
+
+      }
+    }
+    .list-content{
+      border: 2px solid #F0F0F0;
+      border-radius: 5px;
+    }
+    .review-star{
+      display: flex;
+    }
+  }
+.circle-buttons-part1{
+  .part1-pc-img{
+    display: block;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      display: none;
+    }
+  }
+  .part1-mb-img{
+    display: none;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      display: block;
+    }
+  }
+}
+.circle-buttons-part2{
+  img{
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+  }
+  a{
+    font-weight: bold;
+    @media screen and (max-width: $breakpoint-sm-max) {
+      font-weight: 400;
+    }
+  }
+  .link-style{
+    text-align: center;
+    background: #4D4D4D;
+    border-radius: 0 0 10px 10px;
+  }
+}
+  .circle-buttons-part6{
+    p {
+      text-align: center;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        text-align: left;
+      }
+    }
+    h3{
+      @media screen and (max-width: $breakpoint-sm-max) {
+        text-align: left !important;
+      }
+    }
+  }
+  .circle-buttons-part7{
+    .list-content{
+      background: #FFFFFF;
+    }
+  }
+  .square-buttons-part2{
+    .position-relative{
+      width: 380px;
+      height: 305px;
+      margin: 0 auto;
+      @media screen and (max-width: $breakpoint-sm-max) {
+        @include px2rem(width, 608px);
+        @include px2rem(height, 488px);
+      }
+    }
+  }
+}
