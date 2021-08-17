@@ -12,10 +12,14 @@
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
+    "qs": "^6.10.1",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
-    "@nuxtjs/vuetify": "^1.12.1"
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/vuetify": "^1.12.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "postcss-remove-nested-calc": "^1.0.3"
   }
 }
