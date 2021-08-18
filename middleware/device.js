@@ -1,4 +1,4 @@
-import {deviceType} from '@/utils/deviceType'
+import {deviceType} from '~/utils/deviceType'
 
 export default function (context) {
   context.userAgent = process.server ? context.req.headers["user-agent"] : navigator.userAgent;

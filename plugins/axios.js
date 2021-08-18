@@ -18,11 +18,11 @@ export default ({req, res, store, app, redirect}) => {
   // 创建axios实例
   const service = app.$axios.create({
     baseURL: process.env.NODE_ENV === 'development' ?
-      'http://120.24.82.148:8088'
-      : '/api',
+      'https://sticker-api.gs-souvenir.com/'
+      : 'https://sticker-api.gs-souvenir.com/',
     timeout: 5000,
     transformRequest: [(data) => {
-      data = JSON.stringify(data);
+      // data = JSON.stringify(data);
       return data
     }],
     headers: {

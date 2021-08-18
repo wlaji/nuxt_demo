@@ -1,3 +1,51 @@
+//解决图片偏移
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+@font-face {
+  font-family: Calibri-custom;
+  src: url('https://sticker-static.oss-us-west-1.aliyuncs.com/static/font/calibri-regular.woff');
+  font-weight: normal;
+  font-display: optional;
+}
+
+//解决nuxt懒加载图片前会出现alt属性的问题
+img:not([src]) {
+  visibility: hidden;
+  font-size: 0;
+}
+
 body {
-  background-color: $primary;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  text-align: left;
+  background-color: #fff;
+  @media screen and (min-width: 1200px) {
+    font-family: Calibri, Calibri-custom, -apple-system, BlinkMacSystemFont, 'Roboto',
+    'Droid Sans', 'Helvetica', Arial, sans-serif;
+  }
 }

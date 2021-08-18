@@ -1,44 +1,41 @@
-;(function flexible (window, document) {
-  return false;
-  var docEl = document.documentElement
-  var dpr = window.devicePixelRatio || 1
+(function flexible(window, document) {
+  var docEl = document.documentElement //文档对象根元素的只读属性
+  var dpr = window.devicePixelRatio || 1 //获取设备dpr
 
   // adjust body font size
-  function setBodyFontSize () {
+  function setBodyFontSize() {
     if (document.body) {
-      // mac 浏览器 window.devicePixelRatio=2，导致 body 24px 太大了
-      // 这个还是看实际需要吧，为了生活简单可以不需要 dpr
-      // 例如腾讯新闻移动站直接设置 16px
-      // document.body.style.fontSize = (12 * dpr) + 'px'
-      document.body.style.fontSize = '16px'
-    }
-    else {
+      document.body.style.fontSize = 16 + 'px'
+      //浏览器有最小字体限制，css在pc上font-size是12，也就是css像素是12，其DPR为1，在移动端dpr有可能为2和3，为了保证字体不变小，需要用12*dpr进行换算。在普通屏幕下1个CSS像素对应1个物理像素，而在Retina屏幕下，1个CSS像素对应的却是4个物理像素。
+    } else {
       document.addEventListener('DOMContentLoaded', setBodyFontSize)
     }
   }
-  setBodyFontSize();
+
+  setBodyFontSize(); //在html文档加载和解析完成后设置body元素字体大小
 
   // set 1rem = viewWidth / 10
-  /**
-   * 一般移动UI设计以 750px 设计为主
-   * 那么这里的 1rem=75px
-   */
-  function setRemUnit () {
-    var rem = docEl.clientWidth / 10
+  function setRemUnit() { //将页面元素分为100份，每份为a，1rem=10a
+    let width = docEl.clientWidth, rem
+    if (width<1200) {
+      rem = width / 7.5
+    } else {
+      rem = 100
+    }
     docEl.style.fontSize = rem + 'px'
   }
 
   setRemUnit()
 
   // reset rem unit on page resize
-  window.addEventListener('resize', ()=>{
-    setRemUnit();
-  })
-  window.addEventListener('pageshow', function (e) {
+  window.addEventListener('resize', setRemUnit)
+  window.addEventListener('pageshow', function (e) { //当一条会话历史纪录被执行的时候出发事件，包括后退/前进按钮，同时会在onload页面触发后初始化页面时触发
     if (e.persisted) {
       setRemUnit()
     }
   })
+//当页面缩放/前进/后退的时候调整rem大小
+
 
   // detect 0.5px supports
   if (dpr >= 2) {
@@ -47,8 +44,9 @@
     testElement.style.border = '.5px solid transparent'
     fakeBody.appendChild(testElement)
     docEl.appendChild(fakeBody)
-    if (testElement.offsetHeight === 1) {
-      docEl.classList.add('hairlines')
+    if (testElement.offsetHeight === 1) { //offsetHeight返回元素像素高度，高度包含元素边框/内边距和水平滚动条
+      docEl.classList.add('hairlines')//只读属性，返回一个类属性的实时DOMTokenList集合
+
     }
     docEl.removeChild(fakeBody)
   }

@@ -1,11 +1,11 @@
 import { request } from '@/utils/request'
 
-//测试
-export function getArticleList(params) {
+//获取页面信息
+export function getPageInfo(data) {
   return request({
-    url: '/manage/config/getArticleList   ',
+    url: '/api/Page/getPageInfo',
     method: 'post',
-    data: params
+    data
   })
 }
 

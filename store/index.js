@@ -6,9 +6,10 @@ export const mutations = {
     state.device = data;
   }
 };
-export const getters = {
-
-};
+export const getters = {};
 export const actions = {
+  // 项目初始化执行的函数只在服务端执行一次
+  nuxtServerInit({commit}, {req}) {
 
+  }
 };

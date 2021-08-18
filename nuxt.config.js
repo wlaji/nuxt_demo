@@ -18,6 +18,8 @@ export default {
     },
     meta: [
       {charset: 'utf-8'},
+      {'http-equiv': "X-UA-Compatible", content: "IE=edge"},
+      {name: "renderer", content: "webkit"},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {hid: 'description', name: 'description', content: ''},
       {name: 'format-detection', content: 'telephone=no'}
@@ -35,10 +37,18 @@ export default {
     ],
     script: [
       {
-        src: "/js/lib-flexible.js" // 淘宝手机端适配解决方案
+        src: "/js/lib-flexible.js", // 淘宝手机端适配解决方案
+        body: true
       },
       {
         src: "//at.alicdn.com/t/font_1065565_1tg1d7eb9a1.js", //阿里图标, 请根据自己的去替换
+        body: true,
+        async: true,
+        defer: true
+      },
+      {
+        src: "/js/chat.js", // 聊天插件
+        body: true,
         async: true,
         defer: true
       }
@@ -93,7 +103,7 @@ export default {
   },
 
   router: {
-    middleware: ["device"]
+    middleware: []
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -124,7 +134,12 @@ export default {
     postcss: {
       plugins: [
         // 解决scss文件编译后会将 calc(100% / (var(--aspect-ratio))) 变为 calc(100% / var(--aspect-ratio))的问题
-        require('postcss-remove-nested-calc')
+        require('postcss-pxtorem')({
+          rootValue: 100,
+          propList: ['*'],
+          selectorBlackList:['html','body'] ,
+        }),
+        require('postcss-remove-nested-calc'),
       ]
     },
     babel: {
