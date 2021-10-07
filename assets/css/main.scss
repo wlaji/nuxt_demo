@@ -39,13 +39,7 @@ img:not([src]) {
   font-size: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #333333;
-  text-align: left;
-  background-color: #fff;
-  @media screen and (min-width: 1200px) {
-    font-family: Calibri, Calibri-custom, -apple-system, BlinkMacSystemFont, 'Roboto',
-    'Droid Sans', 'Helvetica', Arial, sans-serif;
-  }
+ul,
+ol {
+  list-style: none;
 }
